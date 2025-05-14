@@ -3,32 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Your Name — CS Portfolio</title>
+  <title>Trent Carlson</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
+    <h1>Trent Carlson</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
+      <a href="mailto:trc1@sfu.ca">trc1@sfu.ca</a>
+      <a href="https://www.linkedin.com/in/trent-carlson-2ab7a0228/">LinkedIn</a>
+      <a href="https://github.com/t-trent">GitHub</a>
     </nav>
   </header>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>Computer Science student at SFU, interested in web dev, databases, AI, and more.</p>
+    <div class="about-content">
+      <img src="assets/Headshot.jpeg" alt="Trent Carlson Headshot" class="headshot">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hi! I'm a Computer Science student at SFU, interested in how software can be developed and used to solve complex issues.</p>
+      </div>
+    </div>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3><a href="https://github.com/you/project-1">Project 1</a></h3>
-      <p>Short description of tech stack and what it does.</p>
+    <h2>Personal Projects</h2>
+    <div class="project-box">
+        <h3>Tip Tracker for iOS</h3>
+        <h4>Swift, SwiftUI — <a href="https://github.com/t-trent/tip-tracker-ios">GitHub Repo</a></h4>
+        <p>Tip Tracker is an iOS app to record and visualize a user's hours and tips over time.</p>
+        <p>It allows users to add, edit, and delete records, and view their data in a calendar or graph format.</p>
+      
+        <div class="carousel" data-images='[
+          "assets/screenshots/tip-tracker/Trends-Year.png",
+          "assets/screenshots/tip-tracker/Trends-Month.png",
+          "assets/screenshots/tip-tracker/Home.png",
+          "assets/screenshots/tip-tracker/Calendar.png",
+          "assets/screenshots/tip-tracker/Settings.png",
+          "assets/screenshots/tip-tracker/Edit-Record.png",
+          "assets/screenshots/tip-tracker/Add-Record.png"
+        ]'>
+          <button class="carousel-btn prev" aria-label="Previous">&lt;</button>
+          <img src="" alt="Tip Tracker screenshot" class="carousel-image">
+          <button class="carousel-btn next" aria-label="Next">&gt;</button>
+        </div>
+      </div>
+<!-- Task Management Tool -->
+  <div class="project-box">
+    <h3>Task Management Tool</h3>
+    <h4>Next.js, TypeScript, Node.js, React — <a href="https://github.com/t-trent/task-management-tool">GitHub Repo</a></h4>
+    <p>A web app to track your tasks, set deadlines, and organize projects into boards.</p>
+
+    <div class="carousel" data-images='[
+      "assets/screenshots/task-management/landing.png",
+      "assets/screenshots/task-management/dashboard.png",
+      "assets/screenshots/task-management/account.png"
+    ]'>
+      <button class="carousel-btn prev" aria-label="Previous">&lt;</button>
+      <img src="" alt="Task Manager screenshot" class="carousel-image">
+      <button class="carousel-btn next" aria-label="Next">&gt;</button>
     </div>
-    <!-- repeat for each project -->
+  </div>
+    <h2>Academic Projects</h2>
+<!-- Library Database Application -->
+  <div class="project-box">
+    <h3>Library Database Application</h3>
+    <h4>Flask, Python, SQLite — <a href="https://github.com/t-trent/Library-Application">GitHub Repo</a></h4>
+    <p>A Flask web app to manage book borrowings, fines, and event sign-ups in a library.</p>
+
+    <div class="carousel" data-images='[
+      "assets/screenshots/library-app/landing-page.png",
+      "assets/screenshots/library-app/find-item.png",
+      "assets/screenshots/library-app/borrow-item.png",
+      "assets/screenshots/library-app/view-borrowings.png",
+      "assets/screenshots/library-app/find-event.png",
+      "assets/screenshots/library-app/help-requests.png",
+      "assets/screenshots/library-app/hamburger-menu.png"
+    ]'>
+      <button class="carousel-btn prev" aria-label="Previous">&lt;</button>
+      <img src="" alt="Library App screenshot" class="carousel-image">
+      <button class="carousel-btn next" aria-label="Next">&gt;</button>
+    </div>
+  </div>
+<!-- MVRF Ruby on Rails App -->
+  <div class="project-box">
+    <h3>Metro Vancouver Restaurant Finder</h3>
+    <h4>Ruby on Rails, Ruby — <a href="https://github.com/t-trent/MVRF-Ruby">GitHub Repo</a></h4>
+    <p>Search, sign up, and browse local restaurants with user accounts and FAQs.</p>
+
+    <div class="carousel" data-images='[
+    "assets/screenshots/mvrf/landing.png",
+      "assets/screenshots/mvrf/signup.png",
+      "assets/screenshots/mvrf/login.png",
+      "assets/screenshots/mvrf/search-restaurants.png",
+      "assets/screenshots/mvrf/my-account.png",
+      "assets/screenshots/mvrf/faq.png",
+      "assets/screenshots/mvrf/contact-us.png",
+      "assets/screenshots/mvrf/about-us.png"
+    ]'>
+      <button class="carousel-btn prev" aria-label="Previous">&lt;</button>
+      <img src="" alt="MVRF screenshot" class="carousel-image">
+      <button class="carousel-btn next" aria-label="Next">&gt;</button>
+    </div>
+  </div>
   </section>
 
   <section id="resume">
@@ -36,17 +113,30 @@
     <p><a href="assets/Resume.pdf" target="_blank">Download PDF</a></p>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <ul>
-      <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
-      <li>GitHub: <a href="https://github.com/your-username">@your-username</a></li>
-      <li>LinkedIn: <a href="https://linkedin.com/in/your-username">your-username</a></li>
-    </ul>
-  </section>
-
   <footer>
-    <p>© 2025 Your Name</p>
+    <p>© 2025 Trent Carlson</p>
   </footer>
 </body>
 </html>
+
+<script>
+    ;(function() {
+      document.querySelectorAll('.carousel').forEach(carousel => {
+        const images = JSON.parse(carousel.getAttribute('data-images'));
+        let idx = 0;
+        const imgEl = carousel.querySelector('.carousel-image');
+        const prevBtn = carousel.querySelector('.carousel-btn.prev');
+        const nextBtn = carousel.querySelector('.carousel-btn.next');
+        // initialize
+        imgEl.src = images[0];
+        prevBtn.onclick = () => {
+          idx = (idx - 1 + images.length) % images.length;
+          imgEl.src = images[idx];
+        };
+        nextBtn.onclick = () => {
+          idx = (idx + 1) % images.length;
+          imgEl.src = images[idx];
+        };
+      });
+    })();
+    </script>

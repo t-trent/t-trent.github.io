@@ -1,44 +1,117 @@
-/* reset some defaults */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: system-ui, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    padding: 1rem;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  header {
-    text-align: center;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: system-ui, sans-serif;
+line-height: 1.6;
+color: #333;
+padding: 1rem;
+max-width: 800px;
+margin: auto;
+}
+
+header {
+text-align: center;
+margin-bottom: 2rem;
+}
+
+nav a {
+margin: 0 1rem;
+text-decoration: none;
+color: #007acc;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+section {
+margin-bottom: 2rem;
+}
+
+.project {
+margin-bottom: 1rem;
+}
+
+footer {
+text-align: center;
+font-size: 0.9rem;
+color: #666;
+}
+
+
+.headshot {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+/* About section flex layout */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Rounded box around About text */
+.about-text {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1;
+}
+
+/* Prevent the headshot from shrinking */
+.about-content .headshot {
+  flex-shrink: 0;
+  margin: 0;
+  display: block;
+}
+
+/* Project box styling */
+.project-box {
+    background: #fafafa;
+    border-radius: 8px;
+    padding: 1.5rem;
     margin-bottom: 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
   
-  nav a {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: #007acc;
+  /* Carousel container */
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
   }
   
-  nav a:hover {
-    text-decoration: underline;
+  /* Image in carousel */
+  .carousel-image {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   }
   
-  section {
-    margin-bottom: 2rem;
+  /* Arrow buttons */
+  .carousel-btn {
+    background: #007acc;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
   }
-  
-  .project {
-    margin-bottom: 1rem;
-  }
-  
-  footer {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #666;
+  .carousel-btn:hover {
+    background: #005fa3;
   }
